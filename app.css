@@ -86,6 +86,11 @@ a {
     background-color: var(--light-purple);
     align-self: flex-start;
 }
+.menu,
+.close-menu {
+    cursor: pointer;
+    display: none;
+}
 .menu-items {
     list-style-type: none;
     display: flex;
@@ -124,6 +129,7 @@ a {
 .intro {
     /* border: 1px solid var(--yellow); */
     text-align: center;
+    margin: 0 auto;
 }
 .memoji {
     width: 200px;
@@ -480,4 +486,88 @@ svg {
 path {
     
     fill: var(--text-color);
+}
+.copyright {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: var(--sm-space);
+}
+
+
+
+/* ======================= MOBILE VIEW ======================== */
+@media only screen and (max-width: 900px){
+    .container {
+        width: 90%;
+    }
+    .logo {
+        width: 90px;
+        height: 90px;
+        background: url(images/naru-logo-yellow.png) no-repeat;
+        background-size: 90px;
+        background-position: center;
+        background-color: var(--light-purple);
+    }
+    .nav {
+        padding: 0 5%;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu-items {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        padding-top: var(--lg-space);
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        /*border: 1px solid var(--yellow);*/
+        background-color: rgba(25, 13, 31, 0.9);
+        display: none;
+}
+    .menu-items button {
+        margin-top: var(--lg-space);
+    }
+    .intro br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .menu svg, 
+    .close-menu svg {
+        width: 30px;
+        height: 30px;
+    }
+    .header {
+        font-size: 1.1rem;
+    }
+    /* .works-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .works-header-heading {
+        align-self: flex-start;
+        margin-bottom: var(--sm-space);
+    }
+    .fields {
+        width: 100%;
+    } */
+    .all-skills,
+    .all-works {
+        grid-template-columns: 1fr;
+    }
+    .contacts {
+        width: 35px;
+        height: 35px;
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+    }
 }
