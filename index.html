@@ -16,16 +16,16 @@
         <!-- Navigation -->
         <nav class="nav">
             <a href="#body"><div class="logo"></div></a>
-            <span class="menu">
+            <span id="menu" class="menu">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve"><path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"/><path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03 S379.58,180.455,372.939,180.455z"/><path d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606 c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"/></svg>
             </span>
-            <span class="close-menu">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285 L284.286,256.002z"/></svg>
-            </span>
-            <ul class="menu-items">
-                <li><a href="#works-view" class="nav-skills"><p>WORKS</p></a></li>
-                <li><a href="#skills-view" class="nav-skills"><p>SKILLS</p></a></li>
-                <li><a href="#link-to-resume" class="nav-resume"><p>RESUME</p></a></li>
+            <ul id="menu-items" class="menu-items">
+                <span id="close-menu" class="close-menu">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285 L284.286,256.002z"/></svg>
+                </span>
+                <li><a id="works" href="#works-view" class="nav-skills"><p>WORKS</p></a></li>
+                <li><a id="skills" href="#skills-view" class="nav-skills"><p>SKILLS</p></a></li>
+                <li><a id="resume" href="https://docs.google.com/document/d/1YN2jdvAao2QBEhi6Z8kIPszTFF5fjDzf-6dPke34DFs/edit?usp=sharing" class="nav-resume"><p>RESUME</p></a></li>
                 <button class="nav-say-hello-btn colored-btn"><a href="#contact-me" class="nav-say-hello-text">SAY HELLO</a> </button>
             </ul>
         </nav>
@@ -34,16 +34,16 @@
         <main class="main">
             <!-- Introduction -->
             <div class="intro">
-                <div id="memoji" class="memoji"></div>
-                <p class="intro-hi">Hi, my name is</p>
-                <p class="intro-name">IBEABUCHI PAUL <br> CHUKWU<span class="intor-name--emphasis">NARU</span></p>
-                <p class="intro-about-me">I am a Frontend Developer, a UI Designer and a Graphic Designer.
+                <div id="memoji" class="memoji pop"></div>
+                <p class="intro-hi slide-up">Hi, my name is</p>
+                <p class="intro-name slide-up">IBEABUCHI PAUL <br> CHUKWU<span class="intro-name--emphasis">NARU</span></p>
+                <p class="intro-about-me slide-up">I am a Frontend Developer, a UI Designer and a Graphic Designer.
                     <br> I love learning and working with peopel to bring something new to the table. 
                     <br> <!-- for scroll position of skills tab when skills option is clicked -->
                     I am able to receive constructive critics as they help me get better.
                 </p>
-                <a href="#works-view"><button class="intro-my-works-btn colored-btn">MY WORKS</button></a>
-                <p class="intro-too-fancy">too fancy?</p>
+                <a href="#works-view"><button class="intro-my-works-btn colored-btn slide-up">MY WORKS</button></a>
+                <p class="intro-too-fancy fade-in">too fancy?</p>
             </div>
             <br id="skills-view">
             

@@ -21,6 +21,67 @@
     --sm-space: 15px;
 }
 
+/* ======================= Animations Begins Here ===================== */
+.pop {
+    animation: pop 0.4s forwards ease;
+    -webkit-animation: pop 0.4s forwards ease;
+}
+ @keyframes pop {
+    0% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+    100% {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+ }
+
+ .slide-up {
+    animation: slide-up 1s forwards ease;
+    -webkit-animation: slide-up 1s forwards ease;
+}
+@keyframes slide-up {
+    0% {
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -o-transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.7s forwards ease;
+    -webkit-animation: fade-in 0.7s forwards ease;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+        visibility: visible;
+    }
+}
+
+/* ======================= Animations Ends Here ===================== */
+
+
 /* scroll-behavior must be added to the html element to enable good scrolling effect for the entire page.
 If this property is set elsewhere, the desired effect won't work, it has to be the html tag */
 html {
@@ -149,6 +210,8 @@ a {
 .intro-hi {
     margin-bottom: 10px;
     font-size: 1rem;
+    animation-delay: 0.5s;
+    visibility: hidden;
 }
 .intro-name {
     color: var(--yellow);
@@ -157,24 +220,32 @@ a {
     font-weight: 600;
     line-height: 1;
     letter-spacing: -1px;
+    animation-delay: 0.7s;
+    visibility: hidden;
 }
-.intor-name--emphasis {
+.intro-name--emphasis {
     color: var(--text-color);
 }
 .intro-about-me {
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: var(--md-space);
+    animation-delay: 0.9s;
+    visibility: hidden;
 }
 .intro-my-works-btn {
     padding: 15px 50px;
-    margin-bottom: var(--sm-space);
+    margin-bottom: var(--sm-space); 
+    animation-delay: 1.2s;
+    visibility: hidden; 
 }
 .intro-too-fancy {
     text-decoration: underline;
     color: var(--yellow);
     cursor: pointer;
     margin-bottom: var(--lg-space);
+    opacity: 0;
+    animation-delay: 1.6s;
 }
 
 /* ----------------- SKILLS -------------- */
@@ -511,8 +582,16 @@ path {
     .nav {
         padding: 0 5%;
     }
-    .menu {
+    .menu,
+    .close-menu {
         display: flex;
+    }
+    .close-menu {
+        margin-left: 70%;
+    }
+    .close-menu svg {
+        width: 20px;
+        height: 20px;
     }
     .menu-items {
         position: absolute;
@@ -524,9 +603,9 @@ path {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        /*border: 1px solid var(--yellow);*/
         background-color: rgba(25, 13, 31, 0.9);
-        display: none;
+        opacity: 0;
+        visibility: hidden;
 }
     .menu-items button {
         margin-top: var(--lg-space);
@@ -537,27 +616,13 @@ path {
 }
 
 @media only screen and (max-width: 700px){
-    .menu svg, 
-    .close-menu svg {
-        width: 30px;
-        height: 30px;
+    .menu svg {
+        width: 25px;
+        height: 25px;
     }
     .header {
         font-size: 1.1rem;
     }
-    /* .works-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .works-header-heading {
-        align-self: flex-start;
-        margin-bottom: var(--sm-space);
-    }
-    .fields {
-        width: 100%;
-    } */
     .all-skills,
     .all-works {
         grid-template-columns: 1fr;
