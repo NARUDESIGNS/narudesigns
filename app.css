@@ -40,6 +40,7 @@ body{
 
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 .pattern {
@@ -450,4 +451,33 @@ hr {
     background: url(images/UI-screens/todo-dashboard.jpg) no-repeat;
     background-size: cover;
     /* background-position: center; */
+}
+
+/* ----------------- CONTACT ME  -------------- */
+.contact-links {
+    display: flex;
+    margin-bottom: var(--lg-space);
+}
+.contacts {
+    height: 50px;
+    width: 50px;
+    background-color: var(--light-purple);
+    margin-right: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+svg {
+    width: 25px;
+    height: 25px;
+}
+path {
+    
+    fill: var(--text-color);
 }
