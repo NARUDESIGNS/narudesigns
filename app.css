@@ -1,0 +1,453 @@
+* {
+    padding: 1px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --dark-purple: #211329;
+    /* --dark-purple: #170820; */
+    --light-purple: #331943;
+    /* --very-light-purple: #C35EFF; */
+    --very-light-purple: #c147d1;
+    --yellow: #FFDA61;
+
+    --text-color: #edd0ff;
+
+    --container-width: 85%;
+    --lg-space: 50px;
+    --md-space: 35px;
+    --sm-space: 15px;
+}
+
+/* scroll-behavior must be added to the html element to enable good scrolling effect for the entire page.
+If this property is set elsewhere, the desired effect won't work, it has to be the html tag */
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background: url(images/naru-logo-backdrop-pattern.png) no-repeat;
+    background-size: 600px;
+    background-position-y: 100vh; */
+    background-color: var(--dark-purple);
+    color: var(--text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pattern {
+    position: fixed;
+    /* border: 1px solid var(--yellow); */
+    top: 55%;
+    left: -50px;
+    width: 70%;
+    height: 700px;
+    background: url(images/naru-logo-backdrop-pattern.png) no-repeat;
+    background-size: contain;
+    background-position: top left;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.container { display: non;
+    width: var(--container-width);
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--dark-purple);
+   /* border: 1px solid yellow;
+    width: var(--container-width);*/
+    width: 100%;
+    padding: 0 7.8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 130px;
+    height: 130px;
+    background: url(images/naru-logo-yellow.png) no-repeat;
+    background-size: 120px;
+    background-position: center;
+    background-color: var(--light-purple);
+    align-self: flex-start;
+}
+.menu-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid var(--yellow); */
+    width: 400px;
+}
+.nav-skills,
+.nav-resume {
+    color: var(--text-color);
+    font-size: 13px;
+}
+.nav-skills:hover,
+.nav-resume:hover {
+    text-decoration: underline;
+}
+/* all yellow buttons */
+.colored-btn {
+    padding: 15px 25px;
+    border: none;
+    background-color: var(--yellow);
+    font-size: 12px;
+    cursor: pointer;
+}
+/* .nav-say-hello-btn {
+    //make changes for this btn only
+} */
+.nav-say-hello-text {
+    color: var(--dark-purple);
+}
+.main {
+    margin-top: 140px;
+    /* border: 1px solid var(--very-light-purple); */
+}
+.intro {
+    /* border: 1px solid var(--yellow); */
+    text-align: center;
+}
+.memoji {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: var(--md-space);
+    background: url(images/naru-memoji.png) no-repeat;
+    background-size: 120px;
+    background-position: center;
+    background-color: var(--light-purple);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.intro-hi {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.intro-name {
+    color: var(--yellow);
+    margin-bottom: var(--md-space);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.intor-name--emphasis {
+    color: var(--text-color);
+}
+.intro-about-me {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: var(--md-space);
+}
+.intro-my-works-btn {
+    padding: 15px 50px;
+    margin-bottom: var(--sm-space);
+}
+.intro-too-fancy {
+    text-decoration: underline;
+    color: var(--yellow);
+    cursor: pointer;
+    margin-bottom: var(--lg-space);
+}
+
+/* ----------------- SKILLS -------------- */
+.skills {
+    /* border: 1px solid var(--yellow); */
+    margin-bottom: var(--lg-space);
+}
+.header {
+    color: var(--yellow);
+    font-size: 1.2rem;
+    margin-bottom: var(--sm-space);
+}
+hr {
+    background-color: var(--text-color);
+    border: none;
+    height: 1px;
+    opacity: 0.2;
+    margin-bottom: var(--md-space);
+}
+.all-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+    /* flex-wrap: wrap; */
+}
+.my-skills {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: var(--light-purple);
+    gap: 25px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.my-skills-logo {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /* border: 1px solid var(--yellow); */
+}
+.my-skills-name {
+    font-size: 0.8rem;
+    line-height: 1.3;    
+    word-break: break-word;
+}
+.javacsript-logo {
+    background-color: #FFDA61;
+}
+.css-logo {
+    background-color: rgb(35, 49, 255);
+}
+.html-logo {
+    background-color: #FF8527;
+}
+.rwd-logo {
+    background-color: rgb(98, 202, 168);
+}
+.api-logo {
+    background-color: #00b66a;
+}
+.git-logo {
+    background-color: #f82953;
+}
+.photoshop-logo {
+    background-color: #0065bd;
+}
+.xd-logo {
+    background-color: #af2ac4;
+}
+.invision-logo {
+    background-color: #ff207d;
+}
+
+/* ----------------- WORKS  -------------- */
+.works-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.fields-btn {
+   margin-bottom: -15px; 
+   cursor: pointer;
+}
+.fields-designer-btn {
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+}
+.fields-designer-btn:hover {
+    text-decoration: underline;
+}
+/* remove this after javascript implementation */
+.colored-btn {
+    padding: 15px 25px;
+    border: none;
+    background-color: var(--yellow);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* works as a developer */
+.works-as-a-developer {
+    display: non;
+}
+.all-works,
+.works-as-a-designer {
+    /* border: 1px solid var(--yellow); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+    margin-bottom: var(--lg-space);
+}
+.project {
+    background-color: var(--light-purple);
+    height: 300px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+}
+.typo{
+    background: url(images/screenshots/typo.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wordo{
+    background: url(images/screenshots/wordo.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.thebigdot{
+    background: url(images/screenshots/thebigdot.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.phonebook{
+    background: url(images/screenshots/phonebook.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.guessme{
+    background: url(images/screenshots/guessme.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.stopwatch{
+    background: url(images/screenshots/stopwatch.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.shortly{
+    background: url(images/screenshots/shortly.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.send-animation{
+    background: url(images/screenshots/send-animation.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cloud-animation{
+    background: url(images/screenshots/cloud-animation.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.project-name-holder {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    background-color: var(--light-purple);
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0.8;
+}
+
+.works-hover-state {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 30px;
+    background-color: hsl(277, 46%, 18%, 0.9);
+    height: inherit;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.works-hover-state-name {
+    color: var(--yellow);
+    font-size: 1.2rem;
+    margin-bottom: var(--sm-space);
+}
+.works-hover-state-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: var(--sm-space);
+    height: 150px;
+    overflow: scroll;
+}
+.works-hover-state-code,
+.works-hover-state-demo {
+    color: var(--text-color);
+    border: 1px solid var(--very-light-purple);
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.works-hover-state-code {
+    background: none;
+    margin-right: 10px;
+    padding: 10px;
+}
+.works-hover-state-demo {
+    background-color: var(--very-light-purple);
+}
+
+/* works as a designer */
+.works-as-a-designer {
+    display: none;
+}
+.designs:nth-of-type(1) {
+    background: url(images/UI-screens/animal-app.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.designs:nth-of-type(2) {
+    background: url(images/UI-screens/gamers-dashboard.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.designs:nth-of-type(3) {
+    background: url(images/UI-screens/nysc-dashboard.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.designs:nth-of-type(4) {
+    background: url(images/UI-screens/pennny.png) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.designs:nth-of-type(5) {
+    background: url(images/UI-screens/shop-cart.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.designs:nth-of-type(6) {
+    background: url(images/UI-screens/social-media-app.png) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.designs:nth-of-type(7) {
+    background: url(images/UI-screens/thebigdot.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.designs:nth-of-type(8) {
+    background: url(images/UI-screens/Widgets.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.designs:nth-of-type(9) {
+    background: url(images/UI-screens/todo-dashboard.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}

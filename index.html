@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/naru-memoji.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Naru Designs</title>
+</head>
+<body id="body">
+    <!-- pattern -->
+    <div class="pattern"></div>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="#body"><div class="logo"></div></a>
+            <ul class="menu-items">
+                <li><a href="#works-view" class="nav-skills"><p>WORKS</p></a></li>
+                <li><a href="#skills-view" class="nav-skills"><p>SKILLS</p></a></li>
+                <li><a href="#link-to-resume" class="nav-resume"><p>RESUME</p></a></li>
+                <button class="nav-say-hello-btn colored-btn"><a href="#contact-me" class="nav-say-hello-text">SAY HELLO</a> </button>
+            </ul>
+        </nav>
+
+        <!-- Main Contents -->
+        <main class="main">
+            <!-- Introduction -->
+            <div class="intro">
+                <div id="memoji" class="memoji"></div>
+                <p class="intro-hi">Hi, my name is</p>
+                <p class="intro-name">IBEABUCHI PAUL <br> CHUKWU<span class="intor-name--emphasis">NARU</span></p>
+                <p class="intro-about-me">I am a Frontend Developer, a UI Designer and a Graphic Designer
+                    <br> I love learning and working with peopel to bring something new to the table. 
+                    <br id="skills-view"> <!-- for scroll position of skills tab when skills option is clicked -->
+                    I am able to receive constructive critics as they help me get better.
+                </p>
+                <a href="#works-view"><button class="intro-my-works-btn colored-btn">MY WORKS</button></a>
+                <p class="intro-too-fancy">too fancy?</p>
+            </div>
+
+            
+
+            <!-- Skills -->
+            <div class="skills">
+                <p class="skills-header header">Skills</p>
+                <hr />
+                <div class="all-skills">
+                    <div class="my-skills">
+                        <div class="javacsript-logo my-skills-logo"></div>
+                        <p class="my-skills-name">JAVASCRIPT</p>
+                    </div>
+
+                    <div class="my-skills">
+                        <div class="css-logo my-skills-logo"></div>
+                        <p class="my-skills-name">CSS 3</p>
+                    </div>
+
+                    <div class="my-skills">
+                        <div class="html-logo my-skills-logo"></div>
+                        <p class="my-skills-name">HTML 5</p>
+                    </div>
+
+                    <div class="my-skills">
+                        <div class="rwd-logo my-skills-logo"></div>
+                        <p class="my-skills-name">RESPONSIVE WEB DESIGN</p>
+                    </div>
+
+                    <div class="my-skills">
+                        <div class="api-logo my-skills-logo"></div>
+                        <p class="my-skills-name">FETCH API</p>
+                    </div>
+
+                    <div class="my-skills">
+                        <div class="git-logo my-skills-logo"></div>
+                        <p class="my-skills-name">GIT</p>
+                    </div>
+
+                    <div class="my-skills">
+                        <div class="photoshop-logo my-skills-logo"></div>
+                        <p class="my-skills-name">PHOTOSHOP</p>
+                    </div>
+                    
+                    <div class="my-skills">
+                        <div class="xd-logo my-skills-logo"></div>
+                        <p class="my-skills-name">ADOBE XD</p>
+                    </div>
+
+                    <div class="my-skills">
+                        <div class="invision-logo my-skills-logo"></div>
+                        <p class="my-skills-name">INVISION STUDIO</p>
+                    </div>
+                </div>
+                <br id="works-view">
+            </div>
+
+            
+
+            <!-- Works -->
+            <div id="works" class="works">
+                <section class="works-header header">
+                    <p class="works-header-heading">My works as a</p>
+                    <div class="fields">
+                        <button class="fields-developer-btn fields-btn colored-btn">Developer</button>
+                        <button class="fields-designer-btn fields-btn">Designer</button>                        
+                    </div>
+
+                </section>
+                <hr />
+                
+                <section class="works-as-a-developer">
+                    <div class="all-works">
+                        <div class="typo project">
+                            <div class="project-name-holder">
+                                <p class="project-name-holder-typo project-title">Typo</p>
+                            </div>
+
+                            <section class="works-hover-state">
+                                <p class="works-hover-state-name">Typo</p>
+                                <p class="works-hover-state-desc">This is simple typing game. <br> A set of text is given and required to be typed before a given time elapses. <br>
+                                There are 3 difficulty stages: Newbie, Master and Pro. Think you can type fast? beat me by scoring over 2004 points on Pro level and share me your screenshot on game over.</p>
+                                <div class="works-hover-state-btns">
+                                    <button class="works-hover-state-code">Source code</button>
+                                    <button class="works-hover-state-demo">Demo</button>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="wordo project">
+                            <div class="project-name-holder">
+                                <p class="project-name-holder-wordo project-title">Wordo</p>
+                            </div>
+
+                            <section class="works-hover-state">
+                                <p class="works-hover-state-name">Wordo</p>
+                                <p class="works-hover-state-desc">Wordo is a well structured dictionary. <br> It gives detailed info about the words being searched. <br> It also allows users to
+                                    save words and view them later. You should use wordo.</p>
+                                    <div class="works-hover-state-btns">
+                                        <button class="works-hover-state-code">Source code</button>
+                                        <button class="works-hover-state-demo">Demo</button>
+                                    </div>
+                            </section>
+                        </div>
+
+                        <div class="thebigdot project">
+                            <div class="project-name-holder">
+                                <p class="project-name-holder-theBigDot project-title">theBigDot</p>
+                            </div>
+
+                            <section class="works-hover-state">
+                                <p class="works-hover-state-name">theBigDot</p>
+                                <p class="works-hover-state-desc">This I bet, is one unique clock you've not seen before! <br> 
+                                    The main idea is to mimic the anologue clock without using the clock hands. <br>
+                                So here, the bold number reps the hour while the number in the dot reps the minute and is positioned according to the minute.</p>
+                                <div class="works-hover-state-btns">
+                                    <button class="works-hover-state-code">Source code</button>
+                                    <button class="works-hover-state-demo">Demo</button>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="phonebook project">
+                            <div class="project-name-holder">
+                                <p class="project-name-holder-phonebook project-title">Phonebook</p>
+                            </div>
+
+                            <section class="works-hover-state">
+                                <p class="works-hover-state-name">Phonebook</p>
+                                <p class="works-hover-state-desc">With phonebook you can store contacts on the web. <br> 
+                                You can also search for contacts, edit contact, delete contact and add contact. <br>
+                                It is also very responsve, you should check it out</p>
+                                <div class="works-hover-state-btns">
+                                    <button class="works-hover-state-code">Source code</button>
+                                    <button class="works-hover-state-demo">Demo</button>
+                                </div>
+                            </section>
+                        </div>                    
+
+                        <div class="guessme project">
+                            <div class="project-name-holder">
+                                <p class="project-name-holder-guessme project-title">Guess Me</p>
+                            </div>
+
+                            <section class="works-hover-state">
+                                <p class="works-hover-state-name">Guess Me</p>
+                                <p class="works-hover-state-desc">Guess Me is a word game you probably haven't seen around. <br>
+                                It is simple to play: a word of jumbled characters is displayed and the player is required to guess the correct word <br>
+                                by typing it in the input box. There are several levels to keep the user busy, a help button and a shuffle button to assist the user.</p>
+                                <div class="works-hover-state-btns">
+                                    <button class="works-hover-state-code">Source code</button>
+                                    <button class="works-hover-state-demo">Demo</button>
+                                </div>
+                            </section>
+                        </div>                    
+
+                        <div class="stopwatch project">
+                            <div class="project-name-holder">
+                                <p class="project-name-holder-stopwatch project-title">Stopwatch</p>
+                            </div>
+
+                            <section class="works-hover-state">
+                                <p class="works-hover-state-name">Stopwatch</p>
+                                <p class="works-hover-state-desc">This is one of my earliest projects. As the name implies, it is a simple stopwatch to mark intervals of time. <br>
+                                It has a dark and light mode view which gives users the chance to make preferences.</p>
+                                <div class="works-hover-state-btns">
+                                    <button class="works-hover-state-code">Source code</button>
+                                    <button class="works-hover-state-demo">Demo</button>
+                                </div>
+                            </section>
+                        </div>                    
+
+                        <div class="shortly project">
+                            <div class="project-name-holder">
+                                <p class="project-name-holder-url project-title">Shortly</p>
+                            </div>
+
+                            <section class="works-hover-state">
+                                <p class="works-hover-state-name">Shortly</p>
+                                <p class="works-hover-state-desc">Shorly is a url shortener. It accepts url link as input and produces a shorter version of the link. 
+                                    There is also a button provided for users to copy the new shortened link for usage.</p>
+                                    <div class="works-hover-state-btns">
+                                        <button class="works-hover-state-code">Source code</button>
+                                        <button class="works-hover-state-demo">Demo</button>
+                                    </div>
+                            </section>
+                        </div>     
+                        
+                        <div class="send-animation project">
+                            <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">Send Animation</p>
+                            </div>
+
+                            <section class="works-hover-state">
+                                <p class="works-hover-state-name">Send Animation</p>
+                                <p class="works-hover-state-desc">This simple micro button interaction illustrates package delivery. <br>
+                                Want to be amazed? Hit the demo button below or go view the code on github.</p>
+                                <div class="works-hover-state-btns">
+                                    <button class="works-hover-state-code">Source code</button>
+                                    <button class="works-hover-state-demo">Demo</button>
+                                </div>
+                            </section>
+                        </div>                                         
+
+                        <div class="cloud-animation project">
+                            <div class="project-name-holder">
+                                <p class="project-name-holder-cloud project-title">Cloud Animation</p>
+                            </div>
+
+                            <section class="works-hover-state">
+                                <p class="works-hover-state-name">Cloud Animation</p>
+                                <p class="works-hover-state-desc">This is a simple micro button interaction also, it illustrates cloud upload. <br>
+                                Hit the demo button below to see this awesome interaction or go checkout the code on github.</p>
+                                <div class="works-hover-state-btns">
+                                    <button class="works-hover-state-code">Source code</button>
+                                    <button class="works-hover-state-demo">Demo</button>                                     
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>                                    
+                </section>
+
+                <!-- UI/UX screens -->
+                <section class="works-as-a-designer">
+                    <div class="designs project">
+                        <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">Animal App Homepage</p>
+                        </div>
+                    </div>
+                    <div class="designs project">
+                        <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">Gamers Dashboard</p>
+                        </div>
+                    </div>
+                    <div class="designs project">
+                        <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">NYSC Dashboard</p>
+                        </div>
+                    </div>
+                    <div class="designs project">
+                        <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">Pennny Home Screens</p>
+                        </div>
+                    </div>
+                    <div class="designs project">
+                        <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">Shopping Cart Page</p>
+                        </div>
+                    </div>
+                    <div class="designs project">
+                        <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">Social Media Screens</p>
+                        </div>
+                    </div>
+                    <div class="designs project">
+                        <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">TheBigDot Clock</p>
+                        </div>
+                    </div>
+                    <div class="designs project">
+                        <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">Widget Kits</p>
+                        </div>
+                    </div>
+                    <div class="designs project">
+                        <div class="project-name-holder">
+                                <p class="project-name-holder-send project-title">Todo Application</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer-contact-me header" id="contact-me">Contact Me</p>
+            <hr />
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
