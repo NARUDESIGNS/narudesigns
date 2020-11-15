@@ -118,7 +118,8 @@ a {
     z-index: -1;
 }
 
-.container { display: non;
+.container { 
+    display: none;
     width: var(--container-width);
     max-width: 1366px;
     margin: 0 auto;
@@ -338,11 +339,13 @@ hr {
 }
 .fields-designer-btn {
     margin-left: 20px;
+}
+.fields-btn {
     background-color: transparent;
     border: none;
     color: var(--text-color);
 }
-.fields-designer-btn:hover {
+.fields-btn:hover {
     text-decoration: underline;
 }
 /* remove this after javascript implementation */
@@ -352,13 +355,17 @@ hr {
     background-color: var(--yellow);
     font-size: 12px;
     cursor: pointer;
+    color: var(--dark-purple);
+}
+.colored-btn:hover {
+    text-decoration: none;
 }
 
 /* works as a developer */
 .works-as-a-developer {
     display: non;
 }
-.all-works,
+.works-as-a-developer,
 .works-as-a-designer {
     /* border: 1px solid var(--yellow); */
     display: grid;
@@ -568,6 +575,9 @@ path {
 
 /* ======================= MOBILE VIEW ======================== */
 @media only screen and (max-width: 900px){
+    .pattern{
+        width: 100%;
+    }
     .container {
         width: 90%;
     }
@@ -613,6 +623,11 @@ path {
     .intro br {
         display: none;
     }
+    .works-as-a-developer,
+    .all-skills,
+    .works-as-a-designer {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (max-width: 700px){
@@ -624,7 +639,10 @@ path {
         font-size: 1.1rem;
     }
     .all-skills,
-    .all-works {
+    .works-as-a-developer {
+        grid-template-columns: 1fr;
+    }
+    .works-as-a-designer {
         grid-template-columns: 1fr;
     }
     .contacts {
