@@ -17,6 +17,13 @@ const projects = document.getElementsByClassName('project');
 const dim = document.getElementById('dim');
 const photoHolder = document.getElementById('photo-holder');
 
+const simpleView = document.getElementById('simple-view');
+const tooSimpleLink = document.getElementById('too-simple');
+const overallContainer = document.getElementById('overall-container');
+const tooFancyLink = document.getElementById('too-fancy');
+
+const date = document.getElementById('date');
+
 //Menu btn is clicked
 menuBtn.addEventListener('click', () => {
     menuItems.classList.add('fade-in');
@@ -83,3 +90,21 @@ dim.addEventListener('click', () => {
     dim.style.display = "none";
     photoHolder.style.background = "none";
 })
+
+//Toggle between fancy and simple look
+//fancy link is clicked
+tooFancyLink.addEventListener('click', () => {
+    overallContainer.style.display = 'none';
+    simpleView.style.display = 'block';
+    location.assign('#simple-view');
+})
+
+//simple link is clicked
+tooSimpleLink.addEventListener('click', () => {
+    simpleView.style.display = 'none';
+    overallContainer.style.display = 'block';
+    location.assign('#body');
+})
+
+//make sure copyright date is update
+date.innerText = new Date().getFullYear();

@@ -16,7 +16,7 @@
     </div>
     <!-- pattern -->
     <div class="pattern"></div>
-    <div class="container">
+    <div id="overall-container" class="container">
         <!-- Navigation -->
         <nav class="nav">
             <a href="#body"><div class="logo"></div></a>
@@ -47,7 +47,7 @@
                     I am able to receive constructive critics as they help me get better.
                 </p>
                 <a href="#works-view"><button class="intro-my-works-btn colored-btn slide-up">MY WORKS</button></a>
-                <p class="intro-too-fancy fade-in">too fancy?</p>
+                <p id="too-fancy" class="intro-too-fancy fade-in">too fancy?</p>
             </div>
             <br id="skills-view">
             
@@ -179,7 +179,7 @@
                                 <p class="works-hover-state-name">Phonebook</p>
                                 <p class="works-hover-state-desc">With phonebook you can store contacts on the web. <br> 
                                 You can also search for contacts, edit contact, delete contact and add contact. <br>
-                                It is also very responsve, you should check it out</p>
+                                It is also very responsive, you should check it out</p>
                                 <div class="works-hover-state-btns">
                                     <button class="works-hover-state-code"><a href="https://github.com/narudesigns/phonebook">Source code</a></button>
                                     <button class="works-hover-state-demo"><a href="https://narudesigns.github.io/phonebook">Demo</a></button>
@@ -355,16 +355,51 @@
                     </div>
                 </a>
             </div>
-
-            <div class="copyright">
-                <p> Ibeabuchi Paul Chukwunaru &copy <span>2020</span></p>
-            </div>
         </footer>
     </div>
     
 
-    <div class="simple-view">
-         
+    <div id="simple-view" class="simple-view fade-in">
+         <p class="simple-view-intro">Hello, my name is</p>
+         <h1 class="simple-view-name">Ibeabuchi Paul Chukwu<span>naru</span></h1>
+         <p class="simple-view-about">
+            I am a Frontend Developer, a UI Designer and a Graphic Designer.
+            <br> I love learning and working with peopel to bring something new to the table. 
+            <br> I am able to receive constructive critics as they help me get better.
+         </p>
+         <h3 class="simple-view-skills">Skills</h3>
+        <p>Javascript, Css3, Html5, Responsive Web Design, Fetch API, Git, Photoshop, Adobe Illustrator, Adobe Xd, Invision Studio, Sass</p>
+        <h3 class="simple-view-works">Works</h3>
+        <h4><a href="https://narudesigns.github.io/typo">Typo - narudesigns.github.io/typo</a></h4>
+        <p>This is simple typing game. <br> A set of text is given and required to be typed before a given time elapses. <br>
+            There are 3 difficulty stages: Newbie, Master and Pro. Think you can type fast? beat me by scoring over 2004 points on Pro level and share me your screenshot on game over.
+        </p>
+
+        <h4><a href="https://wordo.netlify.app">Wordo - wordo.netlify.app</a></h4>
+        <p>Wordo is a well structured dictionary. <br> It gives detailed info about the words being searched. <br> It also allows users to
+            save words and view them later. You should use wordo.
+        </p>
+
+        <h4><a href="https://narudesigns.github.io/theBigDot">theBigDot - narudesigns.github.io/theBigDot</a></h4>
+        <p>This I bet, is one unique clock you've not seen before! <br> 
+            The main idea is to mimic the anologue clock without using the clock hands. <br>
+            So here, the bold number reps the hour while the number in the dot reps the minute and is positioned according to the minute.
+        </p>
+
+        <p>More of my projects can be found at <a href="https://github.com/narudesigns">github.com/NARUDESIGNS</a></p>
+
+        <h3 class="simple-view-contact-me">Contact Me</h3>
+        <p><a href="https://twitter.com/paulister007">Twitter</a></p>
+        <p><a href="mailto:ibeabuchipaul@gmail.com">Ibeabuchipaul@gmail.com</a></p>
+        <p><a href="https://github.com/narudesigns">Github</a></p>
+
+        <p id="too-simple" class="too-simple">too simple?</p>
+    </div>
+
+
+
+    <div class="copyright">
+        <p> Ibeabuchi Paul Chukwunaru &copy <span id="date">2020</span></p>
     </div>
     <script src="app.js"></script>
 </body>
