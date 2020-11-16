@@ -152,7 +152,7 @@ a {
 }
 
 .container { 
-    display: none;
+    display: non;
     width: var(--container-width);
     max-width: 1366px;
     margin: 0 auto;
@@ -709,6 +709,7 @@ path {
     font-size: 14px;
     font-weight: 200;
     line-height: 2rem;
+    display: none;
 }
 .simple-view a {
     color: var(--yellow);
