@@ -74,7 +74,7 @@ for(let project of projects){
     //check if the designer btn is active
     project.addEventListener('click', () => {
         if(designerBtn.classList.contains('colored-btn')){
-            let src = `https://narudesigns.github.io/narudesigns/images/ui-screens/${project.id}`;
+            let src = `images/ui-screens/${project.id}`;
             dim.style.display = "block";
             photoHolder.style.background = `url(${src})  no-repeat`;
             photoHolder.style.backgroundSize = 'cover';

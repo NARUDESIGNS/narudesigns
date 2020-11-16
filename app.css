@@ -95,7 +95,7 @@ body{
     background-color: var(--dark-purple);
     color: var(--text-color);
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
 }
 
@@ -142,6 +142,7 @@ a {
     /* border: 1px solid var(--yellow); */
     top: 55%;
     left: -50px;
+    bottom: 0;
     width: 70%;
     height: 700px;
     background: url(images/naru-logo-backdrop-pattern.png) no-repeat;
@@ -617,6 +618,7 @@ path {
     }
     .pattern{
         width: 100%;
+        bottom: 0;
     }
     .container {
         width: 90%;
