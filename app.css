@@ -104,6 +104,39 @@ a {
     color: var(--text-color);
 }
 
+.dim-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(21, 11, 26, 0.8);
+}
+.photo-holder {
+    position: absolute;
+    /* background-size: contain;
+    background-position: center; */
+    width: 80%;
+    max-width: 800px;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 3 10px 10px black;
+    background-color: white;
+}
+
 .pattern {
     position: fixed;
     /* border: 1px solid var(--yellow); */
@@ -119,7 +152,7 @@ a {
 }
 
 .container { 
-    display: none;
+    display: non;
     width: var(--container-width);
     max-width: 1366px;
     margin: 0 auto;
@@ -562,8 +595,10 @@ svg {
     height: 25px;
 }
 path {
-    
     fill: var(--text-color);
+}
+.contacts:hover path{
+    fill: var(--yellow);
 }
 .copyright {
     text-align: center;
@@ -575,6 +610,11 @@ path {
 
 /* ======================= MOBILE VIEW ======================== */
 @media only screen and (max-width: 900px){
+    .photo-holder {
+        position: absolute;
+        width: 80%;
+        height: 70%;
+    }
     .pattern{
         width: 100%;
     }
@@ -631,6 +671,12 @@ path {
 }
 
 @media only screen and (max-width: 700px){
+    .photo-holder {
+        position: absolute;
+        width: 80%;
+        height: 25%;
+        top: 30%;
+    }
     .menu svg {
         width: 25px;
         height: 25px;

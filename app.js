@@ -14,6 +14,9 @@ const designerBtn = document.getElementById('designer-btn');
 
 const projects = document.getElementsByClassName('project');
 
+const dim = document.getElementById('dim');
+const photoHolder = document.getElementById('photo-holder');
+
 //Menu btn is clicked
 menuBtn.addEventListener('click', () => {
     menuItems.classList.add('fade-in');
@@ -59,5 +62,24 @@ for(let project of projects){
     });
     project.addEventListener('mouseout', () => {
         if(developerBtn.classList.contains('colored-btn')) project.lastElementChild.style.display = 'none';
-    });        
+    });
+    
+    //check if the designer btn is active
+    project.addEventListener('click', () => {
+        if(designerBtn.classList.contains('colored-btn')){
+            let src = `http://127.0.0.1:5500/images/ui-screens/${project.id}`;
+            dim.style.display = "block";
+            photoHolder.style.background = `url(${src})  no-repeat`;
+            photoHolder.style.backgroundSize = 'cover';
+            photoHolder.style.backgroundPosition = 'center';
+            //display img in another tab
+            //window.open(`http://127.0.0.1:5500/images/ui-screens/${project.id}`, '_blank');
+        }
+    });
 }
+
+//click anywhere on screen to hide dim and photo
+dim.addEventListener('click', () => {
+    dim.style.display = "none";
+    photoHolder.style.background = "none";
+})
