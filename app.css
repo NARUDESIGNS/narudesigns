@@ -21,6 +21,11 @@
     --sm-space: 15px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
 /* ======================= Animations Begins Here ===================== */
 .pop {
     animation: pop 0.4s forwards ease;
@@ -104,6 +109,11 @@ a {
     color: var(--text-color);
 }
 
+button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
 .dim-background {
     display: none;
     position: fixed;
@@ -128,26 +138,22 @@ a {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     box-shadow: 0 3 10px 10px black;
     background-color: white;
 }
 
 .pattern {
     position: fixed;
-    /* border: 1px solid var(--yellow); */
-    top: 55%;
+    /* border: 1px solid var(--yellow); 
+    top: 55%; */
     left: -50px;
     bottom: 0;
     width: 70%;
-    height: 700px;
+    max-width: 750px;
+    height: 300px;
     background: url(images/naru-logo-backdrop-pattern.png) no-repeat;
-    background-size: contain;
-    background-position: top left;
+    background-size: cover;
+    background-position: bottom left;
     opacity: 0.1;
     z-index: -1;
 }
@@ -212,12 +218,17 @@ a {
     font-size: 12px;
     cursor: pointer;
 }
-/* .nav-say-hello-btn {
-    //make changes for this btn only
-} */
+.colored-btn:hover {
+    background: none;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+/* .nav-say-hello:hover .nav-say-hello-text {
+    color: var(--yellow);
+}
 .nav-say-hello-text {
     color: var(--dark-purple);
-}
+} */
 .main {
     margin-top: 140px;
     /* border: 1px solid var(--very-light-purple); */
@@ -340,7 +351,7 @@ hr {
     background-color: rgb(35, 49, 255);
 }
 .html-logo {
-    background-color: #FF8527;
+    background-color: #ff8528;
 }
 .rwd-logo {
     background-color: rgb(98, 202, 168);
@@ -359,6 +370,12 @@ hr {
 }
 .invision-logo {
     background-color: #ff207d;
+}
+.illustrator-logo {
+    background-color: #ff941b;
+}
+.sass-logo {
+    background-color: #ff7eb4;
 }
 
 /* ----------------- WORKS  -------------- */
@@ -511,6 +528,7 @@ hr {
     border: 1px solid var(--very-light-purple);
     padding: 10px 25px;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 .works-hover-state-code {
     background: none;
@@ -604,6 +622,8 @@ path {
 .copyright {
     text-align: center;
     font-size: 0.7rem;
+    position: relative;
+    bottom: 0;
     margin-bottom: var(--sm-space);
 }
 
@@ -617,8 +637,12 @@ path {
         height: 70%;
     }
     .pattern{
-        width: 100%;
+        width: 90vw;
+        /* height: 50vh;
         bottom: 0;
+        border: 1px solid yellow; 
+        background-size: contain;
+        background-position: bottom left; */
     }
     .container {
         width: 90%;
@@ -665,6 +689,10 @@ path {
     .intro br {
         display: none;
     }
+    .colored-btn:hover {
+        background-color: var(--yellow);
+        color: var(--dark-purple);
+    }
     .works-as-a-developer,
     .all-skills,
     .works-as-a-designer {
@@ -706,7 +734,7 @@ path {
 
 /* =================== SIMPLE PORTFOLIO VIEW ================== */
 .simple-view {
-    width: 80%;
+    width: 90%;
     padding: 40px;
     font-size: 14px;
     font-weight: 200;

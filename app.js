@@ -77,7 +77,7 @@ for(let project of projects){
             let src = `images/ui-screens/${project.id}`;
             dim.style.display = "block";
             photoHolder.style.background = `url(${src})  no-repeat`;
-            photoHolder.style.backgroundSize = 'cover';
+            photoHolder.style.backgroundSize = 'contain';
             photoHolder.style.backgroundPosition = 'center';
             //display img in another tab
             //window.open(`http://127.0.0.1:5500/images/ui-screens/${project.id}`, '_blank');
