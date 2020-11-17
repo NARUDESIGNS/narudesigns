@@ -110,7 +110,7 @@ a {
 }
 
 button {
-    font-family: 'Raleway', sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
 }
 
@@ -529,6 +529,7 @@ hr {
     padding: 10px 25px;
     cursor: pointer;
     margin-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
 }
 .works-hover-state-code {
     background: none;
