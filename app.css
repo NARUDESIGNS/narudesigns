@@ -628,6 +628,45 @@ path {
 }
 
 
+/* =================== SIMPLE PORTFOLIO VIEW ================== */
+.simple-view {
+    width: 70%;
+    max-width: 800px;
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 2rem;
+    display: none;
+}
+.simple-view a {
+    color: var(--yellow);
+}
+.simple-view-intro {
+    margin-bottom: var(--sm-space);
+}
+.simple-view-name,
+.simple-view-skills,
+.simple-view-works {
+    color: var(--yellow);
+}
+.simple-view-about {
+    margin-bottom: var(--md-space);
+}
+.simple-view-skills + p,
+.simple-view-works + p,
+h4 + p {
+    margin-bottom: var(--md-space);
+}
+.simple-view-contact-me {
+    margin-top: var(--md-space);
+}
+.too-simple {
+    text-decoration: underline;
+    color: var(--yellow);
+    cursor: pointer;
+    margin-top: var(--md-space);
+}
+
 
 /* ======================= MOBILE VIEW ======================== */
 @media only screen and (max-width: 900px){
@@ -735,44 +774,4 @@ path {
         width: 20px;
         height: 20px;
     }
-}
-
-
-/* =================== SIMPLE PORTFOLIO VIEW ================== */
-.simple-view {
-    width: 70%;
-    max-width: 800px;
-    padding: 40px;
-    font-size: 14px;
-    font-weight: 200;
-    line-height: 2rem;
-    display: none;
-}
-.simple-view a {
-    color: var(--yellow);
-}
-.simple-view-intro {
-    margin-bottom: var(--sm-space);
-}
-.simple-view-name,
-.simple-view-skills,
-.simple-view-works {
-    color: var(--yellow);
-}
-.simple-view-about {
-    margin-bottom: var(--md-space);
-}
-.simple-view-skills + p,
-.simple-view-works + p,
-h4 + p {
-    margin-bottom: var(--md-space);
-}
-.simple-view-contact-me {
-    margin-top: var(--md-space);
-}
-.too-simple {
-    text-decoration: underline;
-    color: var(--yellow);
-    cursor: pointer;
-    margin-top: var(--md-space);
 }
