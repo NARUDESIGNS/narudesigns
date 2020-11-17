@@ -698,6 +698,9 @@ path {
     .works-as-a-designer {
         grid-template-columns: 1fr 1fr;
     }
+    .simple-view {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 700px){
@@ -737,7 +740,8 @@ path {
 
 /* =================== SIMPLE PORTFOLIO VIEW ================== */
 .simple-view {
-    width: 90%;
+    width: 70%;
+    max-width: 800px;
     padding: 40px;
     font-size: 14px;
     font-weight: 200;
