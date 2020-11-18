@@ -345,37 +345,72 @@ hr {
     word-break: break-word;
 }
 .javacsript-logo {
-    background-color: #FFDA61;
+    /* background-color: #FFDA61; */
+    background: url(images/skills-icons/javascript.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 .css-logo {
-    background-color: rgb(35, 49, 255);
+    /* background-color: rgb(35, 49, 255); */
+    background: url(images/skills-icons/css.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 .html-logo {
-    background-color: #ff8528;
+    /* background-color: #ff8528; */
+    background: url(images/skills-icons/html.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 .rwd-logo {
-    background-color: rgb(98, 202, 168);
+    /* background-color: rgb(98, 202, 168); */
+    background: url(images/skills-icons/grid.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
-.api-logo {
+/* .api-logo {
     background-color: #00b66a;
-}
+} */
 .git-logo {
-    background-color: #f82953;
+    /* background-color: #f82953; */
+    background: url(images/skills-icons/git.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 .photoshop-logo {
-    background-color: #0065bd;
+    /* background-color: #0065bd; */
+    background: url(images/skills-icons/photoshop.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 .xd-logo {
-    background-color: #af2ac4;
+    /* background-color: #af2ac4; */
+    background: url(images/skills-icons/xd.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 .invision-logo {
-    background-color: #ff207d;
+    /*background-color: #ff207d;
+    */background: url(images/skills-icons/invision.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 .illustrator-logo {
-    background-color: #ff941b;
+    /* background-color: #ff941b; */
+    background: url(images/skills-icons/illustrator.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 .sass-logo {
-    background-color: #ff7eb4;
+    /* background-color: #ff7eb4; */
+    background: url(images/skills-icons/sass.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 
 /* ----------------- WORKS  -------------- */
@@ -749,8 +784,8 @@ h4 + p {
     }
     .photo-holder {
         position: absolute;
-        width: 80%;
-        height: 25%;
+        width: 95%;
+        height: 50%;
         top: 30%;
     }
     .menu svg {
