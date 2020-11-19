@@ -516,6 +516,21 @@ hr {
     background-size: cover;
     background-position: center;
 }
+.checkbox-animation{
+    background: url(images/screenshots/checkbox-animation.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.numtowords{
+    background: url(images/screenshots/numtowords.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.social-media-dashboard{
+    background: url(images/screenshots/social-media-dashboard.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .project-name-holder {
     position: absolute;
     left: 0;
