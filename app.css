@@ -99,7 +99,8 @@ body{
     background-position-y: 100vh; */
     background-color: var(--dark-purple);
     color: var(--text-color);
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 14px;
 }
