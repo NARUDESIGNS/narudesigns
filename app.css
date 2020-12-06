@@ -413,6 +413,12 @@ hr {
     background-size: 80%;
     background-position: center;
 }
+.graphql-logo {
+    /* background-color: #ff7eb4; */
+    background: url(images/skills-icons/graphql.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
 
 /* ----------------- WORKS  -------------- */
 .works-header {
