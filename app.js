@@ -86,9 +86,11 @@ for(let project of projects){
 }
 
 //click anywhere on screen to hide dim and photo
-dim.addEventListener('click', () => {
-    dim.style.display = "none";
-    photoHolder.style.background = "none";
+dim.addEventListener('click', (e) => {
+    if (e.target.id == 'dim'){
+        dim.style.display = "none";
+        photoHolder.style.background = "none";
+    }
 })
 
 //Toggle between fancy and simple look
