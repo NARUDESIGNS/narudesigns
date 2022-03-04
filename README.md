@@ -1,4 +1,4 @@
-<img src='./images/naru-memoji.png'>
+<img src='./images/naru-memoji.png' style='width: 100px'>
 👋 Hello there, my name is Ibeabuchi Paul Chukwunaru <br>
 🧑‍💻 | 💅 I’m a frontend React developer and UI designer  <br>
 🥷 I’m currently learning Typescript and Nodejs <br>
