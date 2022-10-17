@@ -171,8 +171,6 @@ button {
     left: 0;
     z-index: 10;
     background-color: var(--dark-purple);
-   /* border: 1px solid yellow;
-    width: var(--container-width);*/
     width: 100%;
     padding: 0 7.8%;
     display: flex;
@@ -198,7 +196,6 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid var(--yellow); */
     width: 400px;
 }
 .nav-skills,
@@ -223,18 +220,11 @@ button {
     color: var(--yellow);
     border: 1px solid var(--yellow);
 }
-/* .nav-say-hello:hover .nav-say-hello-text {
-    color: var(--yellow);
-}
-.nav-say-hello-text {
-    color: var(--dark-purple);
-} */
+
 .main {
     margin-top: 140px;
-    /* border: 1px solid var(--very-light-purple); */
 }
 .intro {
-    /* border: 1px solid var(--yellow); */
     text-align: center;
     margin: 0 auto;
 }
@@ -315,7 +305,6 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5em;
-    /* flex-wrap: wrap; */
 }
 .my-skills {
     display: flex;
@@ -337,7 +326,6 @@ hr {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    /* border: 1px solid var(--yellow); */
 }
 .my-skills-name {
     font-size: 0.8rem;
@@ -345,53 +333,43 @@ hr {
     word-break: break-word;
 }
 .javacsript-logo {
-    /* background-color: #FFDA61; */
     background: url(images/skills-icons/javascript.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
 .css-logo {
-    /* background-color: rgb(35, 49, 255); */
     background: url(images/skills-icons/css.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
 .html-logo {
-    /* background-color: #ff8528; */
     background: url(images/skills-icons/html.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
 .rwd-logo {
-    /* background-color: rgb(98, 202, 168); */
     background: url(images/skills-icons/grid.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
-/* .api-logo {
-    background-color: #00b66a;
-} */
+
 .git-logo {
-    /* background-color: #f82953; */
     background: url(images/skills-icons/git.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
 .photoshop-logo {
-    /* background-color: #0065bd; */
     background: url(images/skills-icons/photoshop.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
 .xd-logo {
-    /* background-color: #af2ac4; */
     background: url(images/skills-icons/xd.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
 .invision-logo {
-    /*background-color: #ff207d;
-    */background: url(images/skills-icons/invision.png) no-repeat;
+    background: url(images/skills-icons/invision.png) no-repeat;
     background-size: 80%;
     background-position: center;
     border-radius: 0;
@@ -401,19 +379,16 @@ hr {
     -o-border-radius: 0;
 }
 .illustrator-logo {
-    /* background-color: #ff941b; */
     background: url(images/skills-icons/illustrator.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
 .sass-logo {
-    /* background-color: #ff7eb4; */
     background: url(images/skills-icons/sass.png) no-repeat;
     background-size: 80%;
     background-position: center;
 }
 .graphql-logo {
-    /* background-color: #ff7eb4; */
     background: url(images/skills-icons/graphql.png) no-repeat;
     background-size: 80%;
     background-position: center;
@@ -459,7 +434,6 @@ hr {
 }
 .works-as-a-developer,
 .works-as-a-designer {
-    /* border: 1px solid var(--yellow); */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5em;
@@ -603,12 +577,10 @@ hr {
 .designs:nth-of-type(1) {
     background: url(images/UI-screens/animal-app.jpg) no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 .designs:nth-of-type(2) {
     background: url(images/UI-screens/gamers-dashboard.jpg) no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 .designs:nth-of-type(3) {
     background: url(images/UI-screens/nysc-dashboard.jpg) no-repeat;
@@ -618,32 +590,26 @@ hr {
 .designs:nth-of-type(4) {
     background: url(images/UI-screens/pennny.png) no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 .designs:nth-of-type(5) {
     background: url(images/UI-screens/shop-cart.jpg) no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 .designs:nth-of-type(6) {
     background: url(images/UI-screens/social-media-app.png) no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 .designs:nth-of-type(7) {
     background: url(images/UI-screens/thebigdot.jpg) no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 .designs:nth-of-type(8) {
     background: url(images/UI-screens/Widgets.jpg) no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 .designs:nth-of-type(9) {
     background: url(images/UI-screens/todo-dashboard.jpg) no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 
 /* ----------------- CONTACT ME  -------------- */
@@ -734,11 +700,6 @@ h4 + p {
     }
     .pattern{
         width: 90vw;
-        /* height: 50vh;
-        bottom: 0;
-        border: 1px solid yellow; 
-        background-size: contain;
-        background-position: bottom left; */
     }
     .container {
         width: 90%;
@@ -775,7 +736,8 @@ h4 + p {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        background-color: rgba(25, 13, 31, 0.9);
+        background-color: rgba(25, 13, 49, 0.8);
+        backdrop-filter: blur(1.5px);
         opacity: 0;
         visibility: hidden;
 }
