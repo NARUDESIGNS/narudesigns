@@ -7,10 +7,8 @@
 
 :root {
     --dark-purple: #241443;
-    /* --dark-purple: #170820; */
     --light-purple: #301a5c;
-    /* --very-light-purple: #C35EFF; */
-    --very-light-purple: #924aaf;
+    --very-light-purple: #9a67ff;
     --yellow: #FFDA61;
 
     --text-color: #edd0ff;
@@ -123,7 +121,8 @@ button {
     bottom: 0;
     left: 0;
     z-index: 11;
-    background-color: rgba(21, 11, 26, 0.8);
+    background-color: rgba(25, 13, 49, 0.8);
+    backdrop-filter: blur(1.5px);
 }
 .photo-holder {
     position: absolute;
@@ -556,13 +555,13 @@ hr {
     left: 0;
     z-index: 2;
     padding: 30px;
-    background-color: hsl(277, 46%, 18%, 0.9);
+    background-color: hsl(260, 56%, 23%, 0.9);
     height: inherit;
-    border-radius: inherit;
-    -webkit-border-radius: inherit;
-    -moz-border-radius: inherit;
-    -ms-border-radius: inherit;
-    -o-border-radius: inherit;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     display: flex;
     flex-direction: column;
     display: none;
